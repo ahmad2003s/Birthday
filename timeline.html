@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Birthday Sana - Timeline</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- External GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
+    <!-- CSS Styling -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff5f7;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Main Title */
+        .main-title {
+            background-color: white; /* Solid white background for visibility */
+            height: 40vh; /* Adjusted height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #333; /* Dark text color */
+            text-align: center;
+            position: relative; /* Added for positioning */
+        }
+
+        .main-title h1 {
+            font-size: 60px;
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            animation: float 4s ease-in-out infinite; /* Animation for title */
+        }
+
+        .main-title p {
+            font-size: 20px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6b6b;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-section h2 {
+            font-size: 40px;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .timeline-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-section ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .timeline-section ul li {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 20px;
+        }
+
+        .timeline-section ul li:before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #ff6b6b;
+            border-radius: 50%;
+        }
+
+        .timeline-section ul li:nth-child(even) {
+            background-color: rgba(255, 107, 107, 0.1);
+        }
+
+        /* Pop-up */
+        #popup {
+            position: fixed;
+            top: 20%;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border: 2px solid #ff4e4e;
+            border-radius: 10px;
+            display: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1000;
+            width: 300px;
+        }
+
+        #popup button {
+            background-color: #ff6b6b;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        #popup button:hover {
+            background-color: #ff4e4e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Keyframe Animations */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title Section -->
+    <div class="main-title" id="main-title">
+        <h1>Happy Birthday My Love Sana!</h1>
+        <p>By Zahin Ahmad</p>
+    </div>
+
+    <!-- Navigation Links to Other Sections -->
+    <nav>
+        <a href="index.html">Home</a> <!-- Link to the main page -->
+        <a href="gifts.html">Gifts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="intention.html">My Intention</a>
+        <a href="contents.html">Contents</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Pop-up: Will You Marry Me? -->
+    <div id="popup">
+        <p>I love you! ❤️ Will you marry me?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="timeline-section" id="timeline">
+        <h2>Our Journey</h2>
+        <p>Here’s a glimpse into the beautiful moments we've shared:</p>
+        <ul>
+            <li>First meeting: Not exactly remembered, but it happened sometime after our birthdays, possibly in November 2023.</li>
+            <li>I was going through a tough time, trying to move on, but your support helped me to focus on the future.</li>
+            <li>Your eyes, your smile, everything about you gradually pulled me closer, and I realized how special you are to me.</li>
+            <li>Even after discovering your marriage, I chose to stay by your side, without expectations—just wanting togetherness.</li>
+            <li>We shared so many personal stories, late-night conversations, and beautiful moments that made everything feel magical.</li>
+            <li>The Ramadan night video call, from Taraweeh till Fajr, is one of the most cherished memories I hold dearly.</li>
+            <li>We've faced our differences, but with every bump, we've managed to grow stronger, forgiving each other along the way.</li>
+            <li>From day one, I never intended anything malicious with the pictures. It's just that I adore everything about you, especially your eyes.</li>
+            <li>The day we meet in person, I can't even imagine my happiness—it'll be a dream come true. InshaAllah!</li>
+        </ul>
+        <p>Each moment is a memory, and I'm grateful for every single one!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ♥ by Zahin Ahmad</p>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/devdunes_zahin/" target="_blank">@devdunes_zahin</a></p>
+    </footer>
+
+    <!-- JavaScript for Pop-up and Animations -->
+    <script>
+        const popup = document.getElementById('popup');
+
+        // Show the pop-up after a few seconds
+        function showPopup() {
+            popup.style.display = 'block'; // Show pop-up
+        }
+
+        // Show pop-up every 5 seconds
+        setInterval(showPopup, 5000); // Show pop-up every 5 seconds
+
+        // Enable button swapping only on "No" hover
+        function enableButtonSwapping() {
+            const yesButton = document.getElementById('yesButton');
+            const noButton = document.getElementById('noButton');
+
+            yesButton.addEventListener('click', () => {
+                alert("You said YES! 😍");
+                popup.style.display = 'none'; // Hide pop-up immediately
+                // Save the response
+                localStorage.setItem('marryResponse', 'yes');
+            });
+
+            noButton.addEventListener('mouseenter', () => {
+                // Swap the position of the Yes and No buttons on hover
+                const temp = yesButton.innerHTML;
+                yesButton.innerHTML = noButton.innerHTML;
+                noButton.innerHTML = temp;
+            });
+
+            noButton.addEventListener('click', () => {
+                alert("You said NO! 😢");
+                popup.style.display = 'none'; // Hide pop-up immediately
+                // Save the response
+                localStorage.setItem('marryResponse', 'no');
+            });
+        }
+
+        // Call the enableButtonSwapping function on page load
+        window.onload = enableButtonSwapping;
+    </script>
+
+</body>
+</html>

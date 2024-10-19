@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- External GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
+    <!-- CSS Styling -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff5f7;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Main Title */
+        .main-title {
+            background-color: white;
+            height: 40vh; /* Adjusted height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #333;
+            text-align: center;
+        }
+
+        .main-title h1 {
+            font-size: 60px;
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            animation: float 4s ease-in-out infinite; /* Animation for title */
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6b6b;
+            padding: 10px 0; /* Reduced padding */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease; /* Fade-in animation for section */
+        }
+
+        h2, h3 {
+            color: #ff6b6b; /* Heading color */
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left; /* Align bullets to the left */
+            margin: 0 auto; /* Center the bullets */
+            max-width: 600px; /* Limit bullet points width */
+        }
+
+        li {
+            padding: 10px 0; /* Padding for list items */
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        /* Alternate color for bullet points */
+        li:nth-child(odd) {
+            background-color: #ffe4e4; /* Light red for odd items */
+        }
+
+        li:nth-child(even) {
+            background-color: #fff5f7; /* Light pink for even items */
+        }
+
+        li:hover {
+            background-color: #ff6b6b; /* Darker red on hover */
+            color: white; /* Text color changes on hover */
+        }
+
+        /* Form Container Styling */
+        .form-container {
+            max-width: 640px; /* Limit the width */
+            margin: 20px auto; /* Center the form */
+            overflow: hidden; /* Hide overflow */
+            border-radius: 8px; /* Optional: Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+        }
+
+        .form-container iframe {
+            width: 100%; /* Make the iframe take full width */
+            height: 3053px; /* Set a fixed height or adjust based on form length */
+            border: none; /* Remove border */
+        }
+
+        /* Confirmation Message */
+        .confirmation {
+            display: none; /* Initially hidden */
+            text-align: center;
+            font-size: 24px;
+            color: #ff6b6b;
+            margin: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Keyframe Animations */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Loading Message Styling */
+        #loading-message {
+            text-align: center;
+            font-size: 20px;
+            color: #ff6b6b;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title Section -->
+    <div class="main-title">
+        <h1>Happy Birthday My love Sana!</h1>
+        <p>By Zahin Ahmad</p>
+    </div>
+
+    <!-- Navigation Links to Other Sections -->
+    <nav>
+        <a href="index.html">Home</a> <!-- Link to the main page -->
+        <a href="gifts.html">Gifts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="intention.html">My Intention</a>
+        <a href="contents.html">Contents</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h2>About</h2>
+        <p>This website is created to celebrate your special day and to express my love for you. I wanted to compile all our memories, intentions, and gifts in one place.</p>
+        <p>Here are a few thoughts I want to share with you:</p>
+        <ul>
+            <li>Every moment with you is a treasure.</li>
+            <li>You bring joy to my life.</li>
+            <li>I hope we create many more beautiful memories together.</li>
+            <li>Your happiness means the world to me.</li>
+        </ul>
+        <hr>
+        <p>My words for you</p>
+        <ul>
+            <li>Meri jaan</li>
+            <li>Sanno</li>
+            <li>Sanam</li>
+            <li>Sweetheart</li>
+            <li>Golu molu</li>
+            <li>Mera babu</li>
+            <li>My love</li>
+            <li>My Life</li>
+        </ul>
+        <hr>
+        <p>U know jb tum gussa krte ho ekdam gaal golu sa laal hojata hai</p>
+    </div>
+    <hr>
+    <h2>Our Shayari</h2>
+    <p>I am here putting some shayari that I made or you told me. It does not mean that it's fit for us now, alhamduillah as everything became good so shayari is not for us, but as I made it, I want to put that, okay baby?</p>
+    <ul>
+        <li>mohabbat ke wade to bahut log krte hai, shayar se pucho mohabbat ke asliyat kya hai (this comes in my mind today 19th oct 2024 at 10:28 pm)</li>
+        <li>Masla tujhe paane ka kabhi tha hi nahi
+            <br>Irada umar bhar chahne ka tha, jo aaj bhi barkarar hai
+        </li>
+        <li>mere kuch khwaish kya aap pure krdoge, mai tanha sa hu kya aap mere tanhayai dur krdoge, mujhe ek ham safar ke talash hai kya aap mera zindagi bhar saath de skte ho, kya mjhe aap apna haath thamne de skte  ho kya</li>
+        <li>Wo to ni pta
+            <br>Bs zindagi ummmeedo me chalte hai, aur ummeed zindagi jeene ko dilasa dilaate hai!</li>
+        <li>Mjhe sikhayat naraazgi khud se hai, tujhse to aaj bhi Ishq hai, aur akhiri dam tk barkarar rahega in sha Allah</li>
+         <li>Aksar bharosa andhi vishwas se shuru hota hai, jo waqt ke saath yaqeen mein badalta hai, aur aakhir mein poora bharosa ban jaata hai</li>
+         <li>Mat takleef pahucha khud ko kisike Ruth Jane pr, agr wo apna hota to ruth tha ni , agr wo apna hota to manane pr bhi ruthe ni rahte, wo tujhse khafa hai aur agr tu bhi khud se khafa hoga to tera kon hoga!</li>
+         <li>Good and bad aren't measurable; they are comparative. And no one is perfect in any aspect</li>
+         <li>Zhakm itne bade hain izhaar kya karein,
+            <br>Khud nishana ban gaye ab kisi pe vaar kya karein,
+            <br>Mar gaye hum lekin khuli reh gai humari aankhein,
+            <br>Ab isse zyada kisi ka intezaar kya karein</li>
+         <li>Agr Mai hamare baate bhul jau, to aapke memories kaise bhulu?
+            <br>Agr memories bhul gya, to ye kaise bhul skta hu ke aap mjhe behaad psnd ho.
+            <br>Agr memory loss bhi hojaye bhul jau tum psnd the, to aapka chehra , eyes, lip, thighs, chubby kaise bhul skta hu.
+            <br>Aur saath me u r the one girl, that give me a reason to live a life with dreams!</li>
+         <li>Thak Gaya hun ab is bhaag daud se, Apni god pe sar rakh Sula paogi kya ??? Agar mein bolun meri Khushi ho tum, Mere liye apne saare gham bhula paogi kya ???
+            <br>Jyaada maange nhi hai meri Kuch haseen pal chahiye saath tumhare, Bolo bitaogi kya ???
+            <br>Jab koi galti krdoon main Chillana mujhe maar bhi Lena, Par uske baad maaf kr bhul jaogi kya ???
+            <br>Main na jee nhi skta bin tumhaare, Thoda tadpana chalega Par jyada der mujhse dur reh paogi kya ???
+            <br>Main na Kam bolta hun Chand lafz kahunga main Tum Puri dastaan smjh jaogi kya ???
+            <br>Main beintehaa mohabbat krta hun tumse, Apni mohabbat se ise Ishq banaogi kya ???
+            <br>Chahta hun tumhari baahon mein mar jana, Bolo ye umr sang mere bitaogi kya ???
+            <br>Izhar-e-Ishq kar rha hun tumse meri jaan, Bolo ab mujhe apna banaogi kya ???
+            <br>Chand to kehta hi hun tumhein, Meri jaan mera ishq meri mohabbat bhi ban jaogi kya ???</li>
+         <li>Zindagi jeene ko nikle the ham, ab zindagi guzarne pad rahe hai</li>
+         <li>Uske na milne ka ,malal to rahega, khudko lakh samjhau, magar khayal to rahega, mai is jahan me ek shaks, ka bhi haqdar nahi tha kya, khudse mera ye, sawal to rahega,</li>
+         <li>Insaano ke khwaish ke koi  intehaan nhi do Gaz jameen chahaye do Gaz ghafan ke liye</li>
+         <li>KAL pe sawaal hai, jeena filhal hai</li>   
+         <li>Ham rahe ya na Yaad Aayenge pal</li>
+         <li>Mohabbat ke pal yu the kya btau tumhe, khyl aata h kya SE kya Kar baithe ham, is manzil me aa pahuche h ham Jo kbhi muqaddar me socha bhi na tha, ham  syad Aapke zaroorat tha kammiya nhi , magar ye to dekheye aap hamare kammiya the zarrorat nhi , Khair ye haasil hua gam mila to mila magar  Kisi Aapno SE Mila. Zindagi yuhe nhi chalte blki chalane parti h ..
+            <br>Afsoos to yuhe aankho simah gye h. Jo Kabhi bhr nhi aaskta marte dam tk......{I wrote this jb mai tut gya tha bahut jada mohabbat bhi gye the exam me bekaar hua tha exam me he feel hua tha ghr wpas aane time ye line likha tha}</li>
+    </ul>
+    <br><br>
+    <h3>Now yours shayari </h3>
+    <ul>
+        <li>Main logo se mulaqat ke lamhe yaad rakhta hu , main chehre bhul bhi jau lehje yaad rakta hu</li>
+        <li>Mai baarish ka Mausam hu , mera aitbaar na krna , kuch bhi hojaye yaara , mjhe tu pyaar na krna</li>
+        <li>Gam bahut bhi bad jaye to khulasa na hone dena , muskura dena magar tamasha na hone dena</li>
+        <li>Ye duniya gham to deti hain , shariq e gham nahi hoti, kisi ke dur Jane se mohabbat kam ni hote !</li>
+    </ul>
+    <hr>
+
+    <!-- Form Section -->
+    <div id="loading-message">Loading form, please wait...</div>
+    <div class="form-container" style="display: none;">
+        <iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfHA-Ui5zTR3ETreaRISGDzoOuk-xwXWMcVJ5I92LfESHepsw/viewform?embedded=true" height="3053" frameborder="0" marginheight="0" marginwidth="0" onload="hideLoading()" onsubmit="return handleFormSubmit(event)">Loading…</iframe>
+    </div>
+    <p>Last two questions aaisahe h greedy mt smjhana</p>
+
+    <!-- Confirmation Message -->
+    <div class="confirmation" id="confirmation-message">
+        Thank you for your response! Your submission has been received.
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ♥ by Zahin Ahmad</p>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/devdunes_zahin/" target="_blank">@devdunes_zahin</a></p>
+    </footer>
+
+    <script>
+        function hideLoading() {
+            document.getElementById('loading-message').style.display = 'none';
+            document.querySelector('.form-container').style.display = 'block';
+        }
+
+        function handleFormSubmit(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+            // Hide the form
+            document.querySelector('.form-container').style.display = 'none';
+            // Show confirmation message
+            document.getElementById('confirmation-message').style.display = 'block';
+            return false; // Prevent any further action
+        }
+    </script>
+</body>
+</html>

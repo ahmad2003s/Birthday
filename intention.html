@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Intentions for You</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- New Font -->
+
+    <!-- External GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
+    <!-- CSS Styling -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff5f7;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Main Title */
+        .main-title {
+            background-color: white;
+            height: 40vh; /* Adjusted height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #333;
+            text-align: center;
+        }
+
+        .main-title h1 {
+            font-size: 70px; /* Increased font size */
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            animation: float 4s ease-in-out infinite; /* Animation for title */
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6b6b;
+            padding: 10px 0; /* Reduced padding */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px; /* Increased font size */
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s; /* Transition for color change */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #fff5f7; /* Light color on hover */
+        }
+
+        /* Content Section */
+        .content-section {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease; /* Fade-in animation for section */
+            max-width: 800px; /* Set a max width for better layout */
+            margin: 0 auto; /* Center the content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 32px; /* Increased font size */
+            font-weight: bold;
+            color: #ff6b6b; /* Accent color */
+            font-family: 'Montserrat', sans-serif; /* New font for headings */
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left; /* Align bullets to the left */
+            margin: 0 auto; /* Center the bullets */
+            max-width: 600px; /* Limit bullet points width */
+            line-height: 1.6; /* Improved line spacing */
+            font-size: 20px; /* Increased font size for list items */
+        }
+
+        li {
+            padding: 10px; /* Padding for list items */
+            transition: transform 0.3s ease, background-color 0.3s ease; /* Transition effects */
+        }
+
+        /* Hover effects */
+        li:hover {
+            transform: scale(1.05); /* Enlarge on hover */
+            background-color: #ffe4e4; /* Light background on hover */
+        }
+
+        /* Pop-up */
+        #popup {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border: 2px solid #ff4e4e;
+            border-radius: 10px;
+            display: none; /* Hidden initially */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #popup button {
+            background-color: #ff6b6b;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 18px; /* Increased font size for buttons */
+            transition: background-color 0.3s; /* Transition for button color */
+        }
+
+        #popup button:hover {
+            background-color: #ff4e4e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 18px; /* Increased font size */
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 20px; /* Increased font size */
+            font-weight: bold;
+        }
+
+        /* Keyframe Animations */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title Section -->
+    <div class="main-title">
+        <h1>Happy Birthday My Love Sana!</h1>
+        <p>By Zahin Ahmad</p>
+    </div>
+
+    <!-- Navigation Links to Other Sections -->
+    <nav>
+        <a href="index.html">Home</a> <!-- Link to the main page -->
+        <a href="gifts.html">Gifts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="intention.html">My Intention</a>
+        <a href="contents.html">Contents</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <h2>My Intentions with You</h2>
+        <p>I’m not here to discuss everything I shared in the timeline. If I missed something, I can update it until the website goes live, or we can discuss it in chat.</p>
+        <ul>
+            <li>Firstly, I want to mention that I've saved many reels for you. Remember when I shared a lot of reels and you told me to share if related to me else not. I have many more saved for you, and I’ll share them over time. I could add them here as links or videos, but that takes time—sorry!</li>
+            <li>My first intention is to marry you. I’m okay with this, and my family is also supportive. If it’s possible in the future, please let me know:
+                <ul>
+                    <li>If you understand these terms, please tell me now; I can work on it.</li>
+                    <li>I know I will either marry you or no one else.</li>
+                    <li>I would even be willing to plan a family with you, but only if you are too.</li>
+                </ul>
+            </li>
+            <li>Otherwise, I want to stay with you always, until my last breath.</li>
+            <li>At least let’s meet once. We’ve started to trust each other, and I promise to never misuse anything ever . I just want you to stay with me and meet at least once.</li>
+            <li>I want to touch your cheeks, eyes, and nose; even hug you.</li>
+            <li>I want to explore places with you—like sunset points, Manchester, Antarctica, Kashmir, and Port Blair.</li>
+            <li>Even if you are not my wife, I can’t live a single day without thinking about you. I’ve gotten used to knowing where you are and why you might be ignoring me. It’s simple: just marry me!</li>
+            <li>If permitted, I’d like to give you a kiss and a peck on your cheek.</li>
+            <li>InshaAllah,  when i got jovb in Delhi, then  I want to spend my days off with you.</li>
+            <li>I kept the picture to see your beautiful kajal look; even at home, that scene can’t be recreated.</li>
+            <li>We will face ups and downs, but that's what makes us stronger. Pictures and memories can stabilize our bond; in tough situations, we can look back and remember the good times, helping us solve our problems together.</li>
+            <li>My wishes are for you to accept my Instagram request, like and comment on my posts, and watch my stories. Please share your WhatsApp, Snapchat, Telegram, and all .</li>
+            <li>Let’s not have any gaps between us.</li>
+            <li>I want you to help me become a better man and more mature.</li>
+            <li>I want to build a future with you, where we always stay together.</li>
+            <li>I want to meet you, as you know, you had even said (guesss) this during our eye challenge.</li>
+        </ul>
+        <hr>
+    </div>
+
+    <!-- Pop-up: Will You Marry Me? -->
+    <div id="popup">
+        <p>I love you! ❤️ Will you marry me?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ♥ by Zahin Ahmad</p>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/devdunes_zahin/" target="_blank">@devdunes_zahin</a></p>
+    </footer>
+
+    <!-- JavaScript for Pop-up -->
+    <script>
+        // Function to show the pop-up
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        // Event listeners for buttons
+        document.getElementById('yesButton').addEventListener('click', function() {
+            alert('Yay! I’m so happy to hear that! ❤️');
+            document.getElementById('popup').style.display = 'none';
+        });
+
+        document.getElementById('noButton').addEventListener('click', function() {
+            alert('That’s okay! Just know that I care about you deeply. ❤️');
+            document.getElementById('popup').style.display = 'none';
+        });
+
+        // Show the pop-up after a delay (e.g., 5 seconds)
+        setTimeout(showPopup, 5000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contents</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- New Font -->
+
+    <!-- External GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
+    <!-- CSS Styling -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #fff5f7;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Main Title */
+        .main-title {
+            background-color: white;
+            height: 40vh; /* Adjusted height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #333;
+            text-align: center;
+        }
+
+        .main-title h1 {
+            font-size: 70px; /* Increased font size */
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            animation: float 4s ease-in-out infinite; /* Animation for title */
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6b6b;
+            padding: 10px 0; /* Reduced padding */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px; /* Increased font size */
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s; /* Transition for color change */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #fff5f7; /* Light color on hover */
+        }
+
+        /* Content Section */
+        .content-section {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+            animation: fadeIn 1s ease; /* Fade-in animation for section */
+            max-width: 800px; /* Set a max width for better layout */
+            margin: 0 auto; /* Center the content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 32px; /* Increased font size */
+            font-weight: bold;
+            color: #ff6b6b; /* Accent color */
+            font-family: 'Montserrat', sans-serif; /* New font for headings */
+        }
+
+        p {
+            font-size: 20px; /* Increased font size */
+            line-height: 1.6; /* Improved line spacing */
+            margin-bottom: 20px; /* Space below paragraphs */
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left; /* Align bullets to the left */
+            margin: 0 auto; /* Center the bullets */
+            max-width: 600px; /* Limit bullet points width */
+            font-size: 20px; /* Increased font size for list items */
+            line-height: 1.6; /* Improved line spacing */
+        }
+
+        /* Pop-up */
+        #popup {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border: 2px solid #ff4e4e;
+            border-radius: 10px;
+            display: none; /* Hidden initially */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #popup button {
+            background-color: #ff6b6b;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 18px; /* Increased font size for buttons */
+            transition: background-color 0.3s; /* Transition for button color */
+        }
+
+        #popup button:hover {
+            background-color: #ff4e4e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 18px; /* Increased font size */
+        }
+
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 20px; /* Increased font size */
+            font-weight: bold;
+        }
+
+        /* Keyframe Animations */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Title Section -->
+    <div class="main-title">
+        <h1>Happy Birthday My Love Sana!</h1>
+        <p>By Zahin Ahmad</p>
+    </div>
+
+    <!-- Navigation Links to Other Sections -->
+    <nav>
+        <a href="index.html">Home</a> <!-- Link to the main page -->
+        <a href="gifts.html">Gifts</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="intention.html">My Intention</a>
+        <a href="contents.html">Contents</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <h2>Contents</h2>
+        <p>Since today we decided to delete all, I can't use anything but yes, I can use my own contents which I made for you: but because of 2 reasons I'm not:</p>
+        <ul>
+            <li>It takes much time as I need to find them on my mobile then transfer to the exact file location for visibility.</li>
+            <li>I want to share that in chats in one-to-one conversations.</li>
+        </ul>
+    </div>
+
+    <!-- Pop-up: Will You Marry Me? -->
+    <div id="popup">
+        <p>I love you! ❤️ Will you marry me?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ♥ by Zahin Ahmad</p>
+        <p>Follow me on Instagram: <a href="https://www.instagram.com/devdunes_zahin/" target="_blank">@devdunes_zahin</a></p>
+    </footer>
+
+    <!-- JavaScript for Pop-up -->
+    <script>
+        // Enable button swapping only on "No" hover
+        function enableButtonSwapping() {
+            const yesButton = document.getElementById('yesButton');
+            const noButton = document.getElementById('noButton');
+
+            yesButton.addEventListener('click', () => {
+                alert("You said YES! 😍");
+                clearInterval(popupInterval); // Stop pop-up after yes
+                document.getElementById('popup').style.display = 'none'; // Hide popup
+            });
+
+            noButton.addEventListener('mouseenter', () => {
+                // Swap the position of the Yes and No buttons on hover
+                const temp = yesButton.innerHTML;
+                yesButton.innerHTML = noButton.innerHTML;
+                noButton.innerHTML = temp;
+            });
+        }
+
+        // Pop-up interval
+        const popupInterval = setInterval(() => {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 4000); // Popup stays for 4 seconds
+        }, 6000); // Popup shows every 6 seconds
+
+        // Call the enableButtonSwapping function on page load
+        window.onload = function() {
+            enableButtonSwapping(); // Enable button swapping on hover
+        };
+    </script>
+
+</body>
+</html>
